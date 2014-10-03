@@ -10,28 +10,27 @@
 <tr><td><b>Test Suite</b></td></tr>
 <tr><td><a href="repeat/success-de-sign-up.html">success-de-sign-up</a></td></tr>
 <tr><td><a href="repeat/success-de-sign-in.html">success-de-sign-in</a></td></tr>
-<tr><td><a href="repeat/success-de-checkout-nocoupon-klarna.html">success-de-checkout-nocoupon-klarna</a></td></tr>
-<tr><td><a href="repeat/success-de-checkout-nocoupon-paypal.html">success-de-checkout-nocoupon-paypal</a></td></tr>
 <tr><td><a href="repeat/success-de-dashbord-information.html">success-de-dashbord-information</a></td></tr>
 <tr><td><a href="repeat/success-de-dashboard-address-add.html">success-de-dashboard-address-add</a></td></tr>
 <tr><td><a href="repeat/success-de-dashboard-address-delete.html">success-de-dashboard-address-delete</a></td></tr>
 <tr><td><a href="repeat/success-de-dashboard-address-modified.html">success-de-dashboard-address-modified</a></td></tr>
+<tr><td><a href="repeat/success-de-checkout-nocoupon-klarna.html">success-de-checkout-nocoupon-klarna</a></td></tr>
+<tr><td><a href="repeat/success-de-checkout-nocoupon-paypal.html">success-de-checkout-nocoupon-paypal</a></td></tr>
 <tr><td><a href="repeat/success-en-sign-up.html">success-en-sign-up</a></td></tr>
 <tr><td><a href="repeat/success-en-sign-in.html">success-en-sign-in</a></td></tr>
-<tr><td><a href="repeat/success-en-checkout-nocoupon-klarna.html">success-en-checkout-nocoupon-klarna</a></td></tr>
-<tr><td><a href="repeat/success-en-checkout-nocoupon-cod.html">success-en-checkout-nocoupon-cod</a></td></tr>
-<tr><td><a href="repeat/success-en-checkout-nocoupon-paypal.html">success-en-checkout-nocoupon-paypal</a></td></tr>
-<tr><td><a href="repeat/success-en-dashbord-information.html">success-en-dashbord-information</a></td></tr>
 <tr><td><a href="repeat/success-en-dashboard-address-add.html">success-en-dashboard-address-add</a></td></tr>
 <tr><td><a href="repeat/success-en-dashboard-address-delete.html">success-en-dashboard-address-delete</a></td></tr>
 <tr><td><a href="repeat/success-en-dashboard-address-modified.html">success-en-dashboard-address-modified</a></td></tr>
+<tr><td><a href="repeat/success-en-dashbord-information.html">success-en-dashbord-information</a></td></tr>
+<tr><td><a href="repeat/success-en-checkout-nocoupon-klarna.html">success-en-checkout-nocoupon-klarna</a></td></tr>
+<tr><td><a href="repeat/success-en-checkout-nocoupon-paypal.html">success-en-checkout-nocoupon-paypal</a></td></tr>
 <tr><td><a href="repeat/success-nl-sign-up.html">success-nl-sign-up</a></td></tr>
 <tr><td><a href="repeat/success-nl-sign-in.html">success-nl-sign-in</a></td></tr>
-<tr><td><a href="repeat/success-nl-checkout-nocoupon-klarna.html">success-nl-checkout-nocoupon-klarna</a></td></tr>
-<tr><td><a href="repeat/success-nl-checkout-nocoupon-paypal.html">success-nl-checkout-nocoupon-paypal</a></td></tr>
 <tr><td><a href="repeat/success-nl-dashboard-address-add.html">success-nl-dashboard-address-add</a></td></tr>
 <tr><td><a href="repeat/success-nl-dashboard-address-delete.html">success-nl-dashboard-address-delete</a></td></tr>
 <tr><td><a href="repeat/success-nl-dashboard-address-modified.html">success-nl-dashboard-address-modified</a></td></tr>
+<tr><td><a href="repeat/success-nl-checkout-nocoupon-klarna.html">success-nl-checkout-nocoupon-klarna</a></td></tr>
+<tr><td><a href="repeat/success-nl-checkout-nocoupon-paypal.html">success-nl-checkout-nocoupon-paypal</a></td></tr>
 <tr><td><a href="repeat/success-nl-dashbord-information.html">success-nl-dashbord-information</a></td></tr>
 </tbody></table>
 </body>

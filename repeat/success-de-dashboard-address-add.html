@@ -24,12 +24,12 @@
 <tr>
 	<td>type</td>
 	<td>id=email</td>
-	<td>287366234@qq.com</td>
+	<td>${username}@ecominfinity.com</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=pass</td>
-	<td>123456</td>
+	<td>${password}</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -47,8 +47,63 @@
 	<td></td>
 </tr>
 <tr>
+	<td>storeRandom</td>
+	<td>random</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=firstname</td>
+	<td>TEST${random}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastname</td>
+	<td>TEST${random}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=telephone</td>
+	<td>18682398779</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=street_1</td>
+	<td>TEST${random}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=city</td>
+	<td>TEST${random}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=zip</td>
+	<td>TEST</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=region_id</td>
+	<td>label=Niedersachsen</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.button.hidden-phone</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>css=div.my-account div.page-title button[title=&quot;Neue Adresse hinzufügen&quot;]</td>
+	<td>css=div.col-main div.title-buttons button.hidden-phone</td>
 	<td></td>
 </tr>
 <tr>
@@ -64,12 +119,12 @@
 <tr>
 	<td>type</td>
 	<td>id=firstname</td>
-	<td>test${random}</td>
+	<td>TEST${random}</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=lastname</td>
-	<td>test${random}</td>
+	<td>TEST${random}</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -79,17 +134,17 @@
 <tr>
 	<td>type</td>
 	<td>id=street_1</td>
-	<td>test${random}</td>
+	<td>TEST${random}</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=city</td>
-	<td>test${random}</td>
+	<td>TEST${random}</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=zip</td>
-	<td>test</td>
+	<td>TEST</td>
 </tr>
 <tr>
 	<td>pause</td>
@@ -108,7 +163,7 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>css=div.fr.top-links ul li:nth(0) ul.links li:nth(1) a</td>
+	<td>css=#log_out a</td>
 	<td></td>
 </tr>
 </tbody></table>
