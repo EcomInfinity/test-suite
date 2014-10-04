@@ -13,27 +13,32 @@
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>http://www.repeatcashmere.com/en/</td>
+	<td>http://www.repeatcashmere.com/nl/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#nav li:first-child a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCssCount</td>
+	<td>css=.prodnam.product-link</td>
+	<td>productCount</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${productCount}</td>
 	<td></td>
 </tr>
 <tr>
 	<td>storeRandom</td>
 	<td>random</td>
-	<td></td>
+	<td>${productCount}</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>css=#nav li:nth(${random}) a</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>css=div.visual a:nth(${random})</td>
-	<td></td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>${random}</td>
+	<td>css=.prodnam.product-link:nth(${random})</td>
 	<td></td>
 </tr>
 <tr>
@@ -52,16 +57,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>store</td>
-	<td>404 Not Found 1&nbsp;&nbsp;| Repeat Cashmere</td>
-	<td>string</td>
-</tr>
-<tr>
-	<td>gotoIf</td>
-	<td>storedVars['verifyTextPresent(${string})']==='true'</td>
-	<td></td>
-</tr>
-<tr>
 	<td>storeLocation</td>
 	<td>url</td>
 	<td></td>
@@ -72,9 +67,14 @@
 	<td></td>
 </tr>
 <tr>
+	<td>storeCssCount</td>
+	<td>css=.touchcarousel-item .product-image</td>
+	<td>productCount</td>
+</tr>
+<tr>
 	<td>storeRandom</td>
 	<td>random</td>
-	<td></td>
+	<td>${productCount}</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -93,11 +93,6 @@
 </tr>
 <tr>
 	<td>endWhile</td>
-	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td></td>
 	<td></td>
 	<td></td>
 </tr>
