@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.repeatcashmere.com" />
+<title>success-de-login-checkout-nocoupon-paypal</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">success-de-login-checkout-nocoupon-paypal</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://www.repeatcashmere.com/de/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.nav-container ul.top-categories li:nth(0) ul li:nth(0) a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.category-view div.category-products div.div_ProductsSmall div.product.small.first div.product-holder div.visual div.tab a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=attribute592</td>
+	<td>label=36</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.product-info form div.add-to-cart-box div.add-to-cart button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=tr.checkout-types td ul.checkout-types li:nth(1) a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing:firstname</td>
+	<td>TEST</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing:lastname</td>
+	<td>TEST</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing:street1</td>
+	<td>TEST</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=billing:country_id</td>
+	<td>label=Deutschland</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing:city</td>
+	<td>TEST</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing:postcode</td>
+	<td>TEST</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing:telephone</td>
+	<td>TEST</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=p_method_adyen_hpp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>8000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=id_accept_terms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=hpp_type_paypal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.col-main form fieldset.group-select div.onestepcheckout-threecolumns.checkoutcontainer div.onestepcheckout-column-right div.onestepcheckout-place-order button.btn-action</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

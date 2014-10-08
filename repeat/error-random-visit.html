@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.repeatcashmere.com/" />
+<title>error-random-visit</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">error-random-visit</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://www.repeatcashmere.com/nl/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#nav li:first-child a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCssCount</td>
+	<td>css=.prodnam.product-link</td>
+	<td>productCount</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${productCount}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeRandom</td>
+	<td>random</td>
+	<td>${productCount}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=.prodnam.product-link:nth(${random})</td>
+	<td></td>
+</tr>
+<tr>
+	<td>for</td>
+	<td>i=1; i &lt;= 100; i++</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeLocation</td>
+	<td>url</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCssCount</td>
+	<td>css=.touchcarousel-item .product-image</td>
+	<td>productCount</td>
+</tr>
+<tr>
+	<td>storeRandom</td>
+	<td>random</td>
+	<td>${productCount}</td>
+</tr>
+<tr>
+	<td>try</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=ul.touchcarousel-container li:nth(${random}) a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>catch</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>addInfo</td>
+	<td>address</td>
+	<td>${url}</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Exception: ${url}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>goBackAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>endTry</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Success: ${url}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${random}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endFor</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${address}</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
