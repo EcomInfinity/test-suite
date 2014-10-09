@@ -9,3 +9,7 @@ Selenium.prototype.doAddInfo = function(_varname, _info) {
   }
 	storedVars[_varname].push(_info);
 }
+
+Selenium.prototype.doClearInfo = function(_varname){
+	storedVars[_varname] = [];
+}
