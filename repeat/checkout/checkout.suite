@@ -9,23 +9,22 @@
 <table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
 <tr><td><b>Test Suite</b></td></tr>
 <tr><td><a href="success-en-ui.html">success-en-ui</a></td></tr>
+<tr><td><a href="success-en-nologin-guest-assert-click-other-address.html">success-en-nologin-guest-assert-click-other-address</a></td></tr>
+<tr><td><a href="success-en-login-cashondelivery.html">success-en-login-cashondelivery</a></td></tr>
 <tr><td><a href="success-en-nologin-registered-cashondelivery.html">success-en-nologin-registered-cashondelivery</a></td></tr>
-<tr><td><a href="success-en-nologin-registered-otheraddress-cashondelivery.html">success-en-nologin-registered-otheraddress-cashondelivery</a></td></tr>
 <tr><td><a href="success-en-nologin-new-paypal.html">success-en-nologin-new-paypal</a></td></tr>
 <tr><td><a href="success-en-nologin-guest-paypal.html">success-en-nologin-guest-paypal</a></td></tr>
-<tr><td><a href="success-en-login-cashondelivery.html">success-en-login-cashondelivery</a></td></tr>
+<tr><td><a href="success-en-nologin-guesttoregistered-5-1.html">success-en-nologin-guesttoregistered-5-1</a></td></tr>
 <tr><td><a href="success-nl-ui.html">success-nl-ui</a></td></tr>
+<tr><td><a href="success-nl-login-cashondelivery.html">success-nl-login-cashondelivery</a></td></tr>
 <tr><td><a href="success-nl-nologin-registered-cashondelivery.html">success-nl-nologin-registered-cashondelivery</a></td></tr>
-<tr><td><a href="success-nl-nologin-registered-otheraddress-cashondelivery.html">success-nl-nologin-registered-otheraddress-cashondelivery</a></td></tr>
 <tr><td><a href="success-nl-nologin-new-paypal.html">success-nl-nologin-new-paypal</a></td></tr>
 <tr><td><a href="success-nl-nologin-guest-paypal.html">success-nl-nologin-guest-paypal</a></td></tr>
-<tr><td><a href="success-nl-login-cashondelivery.html">success-nl-login-cashondelivery</a></td></tr>
 <tr><td><a href="success-de-ui.html">success-de-ui</a></td></tr>
+<tr><td><a href="success-de-login-cashondelivery.html">success-de-login-cashondelivery</a></td></tr>
 <tr><td><a href="success-de-nologin-registered-cashondelivery.html">success-de-nologin-registered-cashondelivery</a></td></tr>
-<tr><td><a href="success-de-nologin-registered-otheraddress-cashondelivery.html">success-de-nologin-registered-otheraddress-cashondelivery</a></td></tr>
 <tr><td><a href="success-de-nologin-new-paypal.html">success-de-nologin-new-paypal</a></td></tr>
 <tr><td><a href="success-de-nologin-guest-paypal.html">success-de-nologin-guest-paypal</a></td></tr>
-<tr><td><a href="success-de-login-cashondelivery.html">success-de-login-cashondelivery</a></td></tr>
 </tbody></table>
 </body>
 </html>

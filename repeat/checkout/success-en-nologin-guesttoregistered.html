@@ -4,16 +4,16 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://repeat.ecominfinity.com/" />
-<title>success-de-nologin-new-paypal</title>
+<title>success-en-nologin-guesttoregistered</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">success-de-nologin-new-paypal</td></tr>
+<tr><td rowspan="1" colspan="3">success-en-nologin-guesttoregistered</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>http://repeat.ecominfinity.com/de/</td>
+	<td>http://repeat.ecominfinity.com/en/</td>
 	<td></td>
 </tr>
 <tr>
@@ -28,7 +28,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>6000</td>
+	<td>5000</td>
 	<td></td>
 </tr>
 <tr>
@@ -58,7 +58,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=div.cart div.cart-links a.btn.btn-dark</td>
+	<td>css=div.cart div.cart-links a.btn-dark</td>
 	<td></td>
 </tr>
 <tr>
@@ -68,22 +68,22 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=div.block-register div.btn-set a.btn-dark.btn-register</td>
+	<td>css=div.block-guest div.btn-set a</td>
 	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
-	<td>5000</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=reg-firstname</td>
+	<td>id=billing:firstname</td>
 	<td>test</td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=reg-lastname</td>
+	<td>id=billing:lastname</td>
 	<td>test</td>
 </tr>
 <tr>
@@ -93,67 +93,107 @@
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=reg-email</td>
+	<td>id=billing:email</td>
 	<td>${random}@ecominfinity.com</td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=reg-pass</td>
-	<td>123546</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=reg-street1</td>
+	<td>id=billing:street1</td>
 	<td>test</td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=reg-street2</td>
+	<td>id=billing:street2</td>
 	<td>test</td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=reg-city</td>
+	<td>id=billing:city</td>
 	<td>test</td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=reg-zip</td>
+	<td>id=billing:postcode</td>
 	<td>test</td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=reg-phone</td>
+	<td>id=billing:telephone</td>
 	<td>18999999999</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
-	<td>css=div.block-register div.btn-set a.btn-register</td>
+	<td>id=billing:use_for_shipping_no</td>
 	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
-	<td>6000</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
+	<td>type</td>
+	<td>id=shipping:firstname</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=shipping:lastname</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=shipping:email</td>
+	<td>${random}@ecominfinity.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=shipping:street1</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=shipping:street2</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=shipping:city</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=shipping:postcode</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=shipping:telephone</td>
+	<td>test</td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>css=div.block-billing-address a.btn-next-step</td>
+	<td>css=div.step-2 a.btn-next-step</td>
 	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
-	<td>5000</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>id=hpp_type_paypal</td>
+	<td>css=div.step-3 a.btn-next-step</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=p_method_adyen_hpp_paypal</td>
 	<td></td>
 </tr>
 <tr>
@@ -163,45 +203,79 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=div.block-payment a.btn-save</td>
+	<td>css=div.step-4 a.btn-next-step</td>
 	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
-	<td>5000</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=div.block-shipment a.btn-save</td>
+	<td>css=div.opc-progress ul.steps li.step-1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=login-email</td>
+	<td>1315800426</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=login-email</td>
+	<td>1315800426@qq.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.block-login a.btn-login</td>
 	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
-	<td>5000</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>id=agreement-2</td>
+	<td>css=div.step-2 a.btn-next-step</td>
 	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
-	<td>5000</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=div#checkout-review-submit div.buttons-set a.btn-place-order</td>
+	<td>css=div.step-3 a.btn-next-step</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=p_method_cashondelivery</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.step-4 a.btn-next-step</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=agreement-1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div#checkout-review-submit a.btn-place-order</td>
 	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
-	<td>6000</td>
+	<td>3000</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://repeat.ecominfinity.com/" />
-<title>success-nologin-new-customers-cash-on-delivery</title>
+<title>success-en-nologin-guest-assert-click-other-address</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">success-nologin-new-customers-cash-on-delivery</td></tr>
+<tr><td rowspan="1" colspan="3">success-en-nologin-guest-assert-click-other-address</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -19,16 +19,6 @@
 <tr>
 	<td>pause</td>
 	<td>5000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=li#log_out a</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>10000</td>
 	<td></td>
 </tr>
 <tr>
@@ -68,7 +58,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=div.cart div.cart-links a.btn.btn-dark</td>
+	<td>css=div.cart div.cart-links a.btn-dark</td>
 	<td></td>
 </tr>
 <tr>
@@ -87,98 +77,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>type</td>
-	<td>id=billing:firstname</td>
-	<td>Test</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=billing:lastname</td>
-	<td>test</td>
-</tr>
-<tr>
-	<td>storeRandom</td>
-	<td>random</td>
-	<td>100000</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=billing:email</td>
-	<td>${random}@ecominfinity.com</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=billing:street1</td>
-	<td>test</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=billing:street2</td>
-	<td>test</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=billing:city</td>
-	<td>test</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=billing:postcode</td>
-	<td>test</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=billing:telephone</td>
-	<td>test</td>
-</tr>
-<tr>
 	<td>click</td>
-	<td>css=div.block-billing-address a.btn-next-step</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>5000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=hpp_type_paypal</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div.block-payment a.btn-save</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>5000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div.block-shipment a.btn-save</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>5000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=agreement-1</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>5000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div#checkout-review-submit div.buttons-set a.btn-place-order</td>
+	<td>id=billing:use_for_shipping_no</td>
 	<td></td>
 </tr>
 <tr>
@@ -186,6 +86,37 @@
 	<td>3000</td>
 	<td></td>
 </tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.form-holder[style='display: block;']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=billing:use_for_shipping_yes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.tips.active</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+
 </tbody></table>
 </body>
 </html>
