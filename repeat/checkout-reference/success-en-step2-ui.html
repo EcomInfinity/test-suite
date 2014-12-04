@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://repeat.ecominfinity.com/" />
+<title>success-en-step2-ui</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">success-en-step2-ui</td></tr>
+</thead><tbody>
+<tr>
+	<td>click</td>
+	<td>css=div.block-guest div.btn-set a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=.step-2 .block-billing-address.editing</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=.step-2 .block-shipping-address.editing</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=.step-2 .block-shipping-address .tips.active</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>css=.step-2 .block-shipping-address .form-holder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=.step-2 .btn-next-step</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=.step-2.active</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing:firstname</td>
+	<td>Test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing:lastname</td>
+	<td>Test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing:email</td>
+	<td>${userId}@ecominfinity.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing:street1</td>
+	<td>Test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing:street2</td>
+	<td>Test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing:city</td>
+	<td>Test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing:postcode</td>
+	<td>Test</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=billing:country_id</td>
+	<td>label=Netherlands</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing:telephone</td>
+	<td>Test</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=billing:use_for_shipping_no</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=.step-2 .block-shipping-address.editing</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>css=.step-2 .block-shipping-address .tips.active</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>css=.step-2 .block-shipping-address .form-holder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=billing:use_for_shipping_yes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=.step-2 .block-shipping-address.editing</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=.step-2 .block-shipping-address .tips.active</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>css=.step-2 .block-shipping-address .form-holder</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
