@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.repeatcashmere.com/" />
+<title>step3_verify_address</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">step3_verify_address</td></tr>
+</thead><tbody>
+<!--现在处于step3页面-->
+<!--验证地址是否与第二步中所填写的一致-->
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=dpd-street</td>
+	<td>Avenue Kléber 19</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=dpd-zipcode</td>
+	<td>75116</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=dpd-city</td>
+	<td>Paris</td>
+</tr>
+</tbody></table>
+</body>
+</html>

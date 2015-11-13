@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.repeatcashmere.com/" />
+<title>myaccount_verify_edit_invoice_hint</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">myaccount_verify_edit_invoice_hint</td></tr>
+</thead><tbody>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h2.title</td>
+	<td>Invoice address</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save Changes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=advice-required-entry-billing:firstname</td>
+	<td>This is a required field.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=advice-required-entry-billing:lastname</td>
+	<td>This is a required field.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=advice-required-entry-billing:street1</td>
+	<td>This is a required field.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=advice-required-entry-billing:street2</td>
+	<td>This is a required field.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=advice-required-entry-billing:postcode</td>
+	<td>This is a required field.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=advice-required-entry-billing:city</td>
+	<td>This is a required field.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=advice-required-entry-billing:telephone</td>
+	<td>This is a required field.</td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.repeatcashmere.com/" />
+<title>step2_verify_addresses_same_with_myaccount</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">step2_verify_addresses_same_with_myaccount</td></tr>
+</thead><tbody>
+<!--验证invoice address-->
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.table.table-address &gt; div.tbody &gt; div.tr &gt; div.td</td>
+	<td>${myaccont_firstname} ${myaccont_lastname}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='form-billing-address']/div/div/div/div[2]/div[2]</td>
+	<td>${myaccont_street} ${myaccont_number}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='form-billing-address']/div/div/div/div[3]/div[2]</td>
+	<td>${myaccont_postcode}, ${myaccont_city}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='form-billing-address']/div/div/div/div[4]/div[2]</td>
+	<td>${myaccont_country}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='form-billing-address']/div/div/div/div[5]/div[2]</td>
+	<td>${myaccont_tel}</td>
+</tr>
+<!--验证shopping address-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#form-shipping-address &gt; div.saved-address &gt; div.table.table-address &gt; div.tbody &gt; div.tr &gt; div.td</td>
+	<td>${myaccont_firstname} ${myaccont_lastname}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='form-shipping-address']/div/div/div/div[2]/div[2]</td>
+	<td>${myaccont_street} ${myaccont_number}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='form-shipping-address']/div/div/div/div[3]/div[2]</td>
+	<td>${myaccont_postcode}, ${myaccont_city}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='form-shipping-address']/div/div/div/div[4]/div[2]</td>
+	<td>${myaccont_country}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='form-shipping-address']/div/div/div/div[5]/div[2]</td>
+	<td>${myaccont_tel}</td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.repeatcashmere.com/" />
+<title>createAccount</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">createAccount</td></tr>
+</thead><tbody>
+<!--现在处于选择step1页面-->
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<!--开始创建账号-->
+<!--点击“create an account”按钮-->
+<tr>
+	<td>click</td>
+	<td>css=form#form-reg div.btn-set a.btn-register</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--验证提示语句“This is a required field.”-->
+<tr>
+	<td>verifyText</td>
+	<td>id=advice-required-entry-reg-firstname</td>
+	<td>This is a required field.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=advice-required-entry-reg-lastname</td>
+	<td>This is a required field.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=advice-required-entry-reg-email</td>
+	<td>This is a required field.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=advice-required-entry-reg-pass</td>
+	<td>This is a required field.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=advice-required-entry-reg-street1</td>
+	<td>This is a required field.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=advice-required-entry-reg-street2</td>
+	<td>This is a required field.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=advice-required-entry-reg-zip</td>
+	<td>This is a required field.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=advice-required-entry-reg-city</td>
+	<td>This is a required field.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=advice-required-entry-reg-country</td>
+	<td>This is a required field.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=advice-required-entry-reg-phone</td>
+	<td>This is a required field.</td>
+</tr>
+<!--输入账号信息-->
+<tr>
+	<td>type</td>
+	<td>id=reg-firstname</td>
+	<td>${firstname}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=reg-lastname</td>
+	<td>${lastname}</td>
+</tr>
+<tr>
+	<td>storeRandom</td>
+	<td>random</td>
+	<td>1000000</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>${random}@ecominfinity.com</td>
+	<td>email</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${email}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=reg-email</td>
+	<td>${email}</td>
+</tr>
+<!--验证密码过短的提示
+<tr>
+	<td>type</td>
+	<td>id=reg-pass</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=advice-validate-password-reg-pass</td>
+	<td>Please enter 6 or more characters. Leading or trailing spaces will be ignored.</td>
+</tr>-->
+<tr>
+	<td>type</td>
+	<td>id=reg-pass</td>
+	<td>123456</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=reg-street1</td>
+	<td>${street}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=reg-street2</td>
+	<td>${number}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=reg-zip</td>
+	<td>${postcode}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=reg-city</td>
+	<td>${city}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=reg-country</td>
+	<td>label=${country}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=reg-phone</td>
+	<td>${tel}</td>
+</tr>
+<!--验证复选框-->
+<tr>
+	<td>verifyValue</td>
+	<td>id=reg-newsletter</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=reg-newsletter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=reg-newsletter</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=reg-newsletter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--提交账号信息-->
+<tr>
+	<td>click</td>
+	<td>css=form#form-reg div.btn-set a.btn-register</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<!--验证是否创建账号成功-->
+<tr>
+	<td>verifyText</td>
+	<td>link=Log Out</td>
+	<td>Log Out</td>
+</tr>
+<!--现在处于step2页面-->
+</tbody></table>
+</body>
+</html>
