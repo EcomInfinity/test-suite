@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.repeatcashmere.com/" />
+<title>step5_verify_address_different</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">step5_verify_address_different</td></tr>
+</thead><tbody>
+<!--现在处于step5页面-->
+<!--验证address-->
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=address</td>
+	<td>${billing_firstname} ${billing_lastname} <br /> ${billing_street} ${billing_number}<br /> ${billing_postcode}, ${billing_city}<br />${billing_country}<br /> ${billing_tel}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.block.block-review-shipping-address &gt; address</td>
+	<td>${shipping_firstname} ${shipping_lastname} <br /> ${shipping_street} ${shipping_number}<br /> ${shipping_postcode}, ${shipping_city}<br />${shipping_country}<br /> ${shipping_tel}</td>
+</tr>
+</tbody></table>
+</body>
+</html>

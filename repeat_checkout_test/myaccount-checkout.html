@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.repeatcashmere.com/" />
+<title>myaccount-checkout</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">myaccount-checkout</td></tr>
+</thead><tbody>
+<!--进入checkout-->
+<tr>
+	<td>clickAndWait</td>
+	<td>css=li.top-cart &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Check Out')])[2]</td>
+	<td></td>
+</tr>
+<!--修改invoice address-->
+<tr>
+	<td>click</td>
+	<td>id=billing:use_for_shipping_no</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing:firstname</td>
+	<td>${firstname}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing:lastname</td>
+	<td>${lastname}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing:street1</td>
+	<td>${street}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing:street2</td>
+	<td>${number}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing:postcode</td>
+	<td>${postcode}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing:city</td>
+	<td>${city}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=billing:country_id</td>
+	<td>label=France</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing:telephone</td>
+	<td>${tel}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=billing:security_access_code</td>
+	<td>${Security}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=billing:email</td>
+	<td>${random}@raccoon-tech.com</td>
+</tr>
+<!--修改shipping address-->
+<tr>
+	<td>type</td>
+	<td>id=shipping:firstname</td>
+	<td>${firstname}1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=shipping:lastname</td>
+	<td>${lastname}1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=shipping:email</td>
+	<td>${random}@raccoon-tech.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=shipping:street1</td>
+	<td>${street}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=shipping:street2</td>
+	<td>${number}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=shipping:postcode</td>
+	<td>${postcode}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=shipping:city</td>
+	<td>${city}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=shipping:country_id</td>
+	<td>label=France</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=shipping:telephone</td>
+	<td>${tel}1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.step-2 a.btn-next-step</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

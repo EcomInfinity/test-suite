@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.repeatcashmere.com/" />
+<title>myaccount_verify_addresses_same_with_checkout</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">myaccount_verify_addresses_same_with_checkout</td></tr>
+</thead><tbody>
+<!--当前处于myaccount页面-->
+<!--验证invoice address-->
+<tr>
+	<td>verifyText</td>
+	<td>css=div.table.table-address &gt; div.tbody &gt; div.tr &gt; div.td</td>
+	<td>${billing_firstname} ${billing_lastname}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[3]/div/div/div/div/div/div/div[2]/div[2]</td>
+	<td>${billing_street} ${billing_number}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[3]/div/div/div/div/div/div/div[3]/div[2]</td>
+	<td>${billing_postcode}, ${billing_city}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div/div/div/div[4]/div[2]</td>
+	<td>${billing_country}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[5]/div[2]</td>
+	<td>${billing_tel}</td>
+</tr>
+<!--验证shipping address-->
+<tr>
+	<td>verifyText</td>
+	<td>css=div.col-2 &gt; div.info-box &gt; div.box-content &gt; div.table.table-address &gt; div.tbody &gt; div.tr &gt; div.td</td>
+	<td>${shipping_firstname} ${shipping_lastname}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[3]/div/div[2]/div/div/div/div/div[2]/div[2]</td>
+	<td>${shipping_street} ${shipping_number}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[2]/div/div/div/div/div[3]/div[2]</td>
+	<td>${shipping_postcode}, ${shipping_city}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[2]/div/div/div/div/div[4]/div[2]</td>
+	<td>${shipping_country}</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[2]/div/div/div/div/div[5]/div[2]</td>
+	<td>${shipping_tel}</td>
+</tr>
+</tbody></table>
+</body>
+</html>
